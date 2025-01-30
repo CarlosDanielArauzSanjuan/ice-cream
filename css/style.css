@@ -5,8 +5,12 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: var(--color-8);
+}
+
 header{
-background: red;
+    /*background: red;*/
 display: flex ;
 flex-direction: row;
 justify-content: space-between;
@@ -18,27 +22,34 @@ padding-right: 15px;
 }
 
 .header_logo{
-    background: blue;
+    /*background: blue;*/
     img 
     {
 
     }
 }  
 .header_nav{
-    background: green;
+    /*background: green;*/
     justify-content: space-between;
     align-items: center;
     display: flex;
     flex-direction: row;
     gap: 54px;
 
-    li {
-     list-style: none;
-     background: yellow;
+    li  
+    {
+    list-style: none;
+        a
+            {
+            font-family: "Poppins-SemiBold";
+            color: var(--color-1);
+            text-decoration: none;
+            font-size: 28px;
+            display: flex;
+            }
     }
 }
-
-
-.header_menu{
-    background: violet;
+.header_menu
+{
+    /*background: violet;*/
 }

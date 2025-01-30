@@ -4,16 +4,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 header{
- background: red;
- display: flex ;
- justify-content: space-between;
+background: red;
+display: flex ;
+flex-direction: row;
+justify-content: space-between;
+align-items: center;
+padding-top: 20px;
+padding-left: 15px;
+padding-right: 15px;
 
 }
+
 .header_logo{
     background: blue;
+    img 
+    {
 
+    }
 }  
-.header_logo img{
+.header_nav{
+    background: green;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 54px;
 
+    li {
+     list-style: none;
+     background: yellow;
+    }
+}
+
+
+.header_menu{
+    background: violet;
 }

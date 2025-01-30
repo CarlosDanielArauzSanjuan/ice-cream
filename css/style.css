@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 0.5px solid tomato;
 }
 
 body{
@@ -53,3 +54,35 @@ padding-right: 15px;
 {
     /*background: violet;*/
 }
+
+main{
+   background: green;
+   padding-top: 45px;
+   padding-left: 75px;
+   padding-right: 75px;
+
+}
+.section_container{  
+        
+        display: flex;
+        justify-content: space-between;
+
+
+    }
+    .article_jumping{
+        background: violet;
+        flex-direction: column;
+        
+        h1{
+            color: var(--color-1);
+            font-family: "Poppins-SemiBold";
+            font-size: 120px;
+            line-height: 110px;
+            
+            }
+         
+    }
+    .div_buttons{
+        background: rebeccapurple;
+        display: flex;
+    }

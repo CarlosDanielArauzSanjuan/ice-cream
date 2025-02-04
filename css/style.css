@@ -13,9 +13,9 @@ body{
 header{
     /*background: red;*/
 display: flex ;
-flex-direction: row;
 justify-content: space-between;
-align-items: center;
+flex-direction: row;
+align-items: center; /*CENTRAR*/
 padding-top: 20px;
 padding-left: 15px;
 padding-right: 15px;

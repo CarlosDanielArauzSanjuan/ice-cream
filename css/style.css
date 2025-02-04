@@ -7,7 +7,7 @@
 }
 
 body{
-    /*background-color: var(--color-8);*/
+    background-color: var(--color-8);
     background-image: url(../storage/img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -90,7 +90,7 @@ main{
             
 }
 
-.article__jumping p{
+.article_jumping p{
 
         margin-top: 26px;
         font-family: "Poppins-Medium";
@@ -125,40 +125,131 @@ main{
     justify-content: center;
     align-items: center;
 }
-.div__buttons:hover a:hover{
+.div_buttons:hover a:hover{
     outline: none;
     backdrop-filter: blur(24px);
 }
-.article__reviews {
-    /* background: red; */
-    padding: 20px;
+
+#reviews{
+    /* background: blue; */
+    /* height: 281px; */
+    height: 221px;
+    padding-top: 18px;
+    padding-left: 18px;
+    padding-right: 27px;
+    display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: repeat(var(--cards), var(--cardHeight));
+	gap: var(--cardMargin);
+	/* padding-bottom: calc(var(--cards) * var(--cardTopPadding)); */
+	/* margin-bottom: var(--cardMargin); */
 }
-.div__reviews-container {
+
+#reviews::-webkit-scrollbar {
+    /* Oculta la barra de desplazamiento predeterminada */
+
+    width: 10px; /* Ancho de la barra de desplazamiento */
+}
+
+#reviews::-webkit-scrollbar-track {
+    /* Personaliza el riel de la barra de desplazamiento */
+
+    background: transparent; /* Color del fondo */
+}
+
+#reviews::-webkit-scrollbar-thumb {
+    /* Personaliza el 'thumb' de la barra de desplazamiento */
+
+    background: var(--color-1); /* Color del thumb */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+#reviews::-webkit-scrollbar-thumb:hover {
+    /* Estiliza el thumb cuando se pasa el cursor sobre él */
+
+    background: var(--color-6);
+    cursor: grab;
+}
+
+#reviews::-webkit-scrollbar-thumb:active {
+    cursor: grabbing;
+}
+
+#reviews::-webkit-scrollbar-button {
+    /* Estiliza los botones de la barra de desplazamiento (si los hay) */
+
+    display: none;
+}
+
+.div_reviews-container:nth-child(1){
+    --index: 1;
+}
+
+.div_reviews-container:nth-child(2){
+    --index: 2;
+    /* top: 20px; */
+}
+
+.div_reviews-container:nth-child(3){
+    --index: 3;
+    /* top: 40px; */
+}
+
+.div_reviews-container:nth-child(4){
+    --index: 4;
+    /* top: 60px; */
+}
+
+.article_reviews {
+    /* background: red; */
+    overflow-y: auto;
+}
+
+.div_reviews-container {
     width: 345px;
     height: 202px;
     background: var(--color-1);
     border-radius: 18px;
-    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 1px solid var(--color-5);
+    position: sticky;
+    top: 0px;
+    padding-top: calc(var(--index) * var(--cardToppadding));
+    z-index: var(--index);
 }
-.div__reviews-cards {
-    /* background: green; */
-    /* padding: 20px; */
+
+.div_reviews-cards::after {
+        content: "x";
+        cursor: pointer;
+        font-family: "Poppins-Medium";
+        color: var(--color-1);
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35px;
+        height: 35px;
+        background: var(--color-8);
+        border: 1px solid var(--color-6);
+        border-radius: 100%;
+        left: -18px;
+        top: -18px;
 }
-.div__reviews-profile {
+
+.div_reviews-profile {
     /* background: violet; */
     /* padding: 20px; */
     gap: 16px;
     display: flex;
 }
-.div__reviews-profile img {
+.div_reviews-profile img {
     /* background: orange; */
     object-fit: contain;
     /* padding: 20px; */
 }
-.div__reviews-cards p{
+.div_reviews-cards p{
     font-family: "Poppins-Medium";
     text-align: justify;
     margin-top: 12px;
@@ -167,19 +258,20 @@ main{
     width: 277px;
     
 }
-.div__reviews-rating {
+.div_reviews-rating {
     /* background: yellow; */
     /* padding: 20px; */
 }
-.div__reviews-rating h3{
+.div_reviews-rating h3{
     color: var(--color-2);
     font-family: "Poppins-Medium";
     font-size: 28px;
 }
-.div__reviews-stars {
+.div_reviews-stars {
     /* background: olive; */
     /* padding: 20px; */
 }
-.div__reviews-stars img{
+.div_reviews-stars img{
     /* background: turquoise; */
     padding: 0;
+}

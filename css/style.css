@@ -67,22 +67,31 @@ main{
         display: flex;
         justify-content: space-between;
 
+}
 
-    }
-    .article_jumping{
+
+.article_jumping{
         background: violet;
         flex-direction: column;
-        
-        h1{
-            color: var(--color-1);
-            font-family: "Poppins-SemiBold";
-            font-size: 120px;
-            line-height: 110px;
-            
-            }
-         
-    }
-    .div_buttons{
-        background: rebeccapurple;
         display: flex;
-    }
+        width: 679px;
+}
+        
+.article_jumping h1{
+        color: var(--color-1);
+        font-family: "Poppins-SemiBold";
+        font-size: 120px;
+        line-height: 110px;
+            
+}
+         
+.div_buttons{
+    background: rebeccapurple;
+    display: flex;
+   
+}
+
+.div_buttons a { 
+
+
+}

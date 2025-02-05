@@ -22,7 +22,7 @@ display: flex ;
 justify-content: space-between;
 flex-direction: row;
 align-items: center; /*CENTRAR*/
-padding: 20px 40px; /* Espaciado horizontal */
+padding: 50px 40px; /* Espaciado horizontal */
 width: 100%;
 
 }
@@ -30,6 +30,7 @@ width: 100%;
 .header_logo{
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     padding-left: 40px;
 }  
 
@@ -151,7 +152,7 @@ main{
     box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.2);
 
 }
-.div__buttons:hover a:hover{
+.div_buttons:hover a:hover{
     outline: none;
     background: var(--color-1);
     color: var(--color-2);
@@ -159,18 +160,17 @@ main{
 }
 
 #reviews{
-    /* background: blue; */
-    /* height: 281px; */
-    height: 221px;
-    padding-top: 18px;
-    padding-left: 18px;
-    padding-right: 27px;
+    position: absolute;
+    width: 450px;
+    padding: 30px;
+
+    height: 281px;
+    top: 210px;
+    right: 150px;
+
     display: grid;
-	grid-template-columns: 1fr;
 	grid-template-rows: repeat(var(--cards), var(--cardHeight));
 	gap: var(--cardMargin);
-	/* padding-bottom: calc(var(--cards) * var(--cardTopPadding)); */
-	/* margin-bottom: var(--cardMargin); */
     overflow-x: hidden; /* Evita scroll horizontal si hay elementos desbordando */
 
 }
@@ -314,7 +314,9 @@ main{
     display: flex;
     flex-direction: column;
     gap: 15px;
-   
+    position: absolute;
+    top: 600px;
+    right: 85px;
 }
 .div_choose-type h3{
     color: var(--color-1);
@@ -324,6 +326,8 @@ main{
 .div_choose-type-buttons {
     display: flex;
     justify-content: space-between;
+    gap: 45px;
+
 }
 
 .div_choose-type-buttons a{

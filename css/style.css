@@ -7,11 +7,11 @@
 }
 
 body{
-    background-color: var(--color-8);
+
+    background-position: 50% 50%;
     background-image: url(../storage/img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top center;
 }
 
 header{
@@ -64,7 +64,7 @@ main{
    padding-top: 45px;
    padding-left: 75px;
    padding-right: 75px;
-
+   flex-direction: column;
 }
 
 .section_container article:nth-child(2){
@@ -202,6 +202,7 @@ main{
 .article_reviews {
     /* background: red; */
     overflow-y: auto;
+    flex-direction: column;
 }
 
 .div_reviews-container {
@@ -310,62 +311,167 @@ main{
 }
 
 .section_container-products {
-    background: red;
+    /* background: red; */
     /* padding: 20px; */
+    padding-top: 63px;
+    padding-right: 64px;
+    padding-left: 78px;
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
 }
 
 .div_trendy {
     background: violet;
+    background: var(--color-1);
+    width: 213px;
+    height: 54px;
+    border-radius: 52px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 .div_trendy h2{
+    color: var(--color-2);
+    font-family: "Poppins-Medium";
+    font-size: 28px;
+    padding-right: 19px;
 }
 
 .div_trendy img{
+    position: absolute;
+    top: -12px;
+    right: -2px;
+    
 }
 
 .article_products{
-    background: green;
+    /* background: green; */
     /* padding: 20px; */
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-wrap: wrap;
     column-gap: 52px;
     row-gap: 59px;
+    padding-top: 45px;
+
 }
 
 .form_container-product {
-    background: orange;
-    width: 690px;
-    height: 324px;
+     /* background: orange; */
+     overflow: hidden;
+     width: 690px;
+     height: 324px;
+     padding-left: 38px;
+     display: flex;
+     gap: 58px;
+     align-items: center;
+     outline: 1px solid var(--color-1);
+     border-radius: 24px;
+     backdrop-filter: blur(8px);
+ }
+ .form_container-product:hover{
+     outline: none;
+     cursor: pointer;
+ }
+ .form_container-product:active,
+ .form_container-product:active h3,
+ .form_container-product:active span,
+ .form_container-product:active input[type="submit"],
+ .form_container-product:active label{
+     background: var(--color-1);
+     color: var(--color-2);
+ }
+ .form_container-product:active input[type="submit"]{
+     outline: 1px solid var(--color-2);
 }
 
 .form_container-product img{
+        /* background: violet; */
+        width: 217px;
+        height: 217px;
+        object-fit: none;
 }
 
 .div_product {
-    background: turquoise;
+    /* background: turquoise; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 18px;
 }
 
 .div_product h3{
+    color: var(--color-1);
+    font-family: "Poppins-Medium";
+    font-size: 28px;
 }
 
-.div_product label{
+.div_product span{
+    color: var(--color-1);
+    font-family: "Poppins-Medium";
+    font-size: 20px;
 }
 
 .div_type-order {
-    background: yellow;
-}
+    /* background: yellow; */
+    width: 309px;
+    display: flex;
+    gap: 31px;}
 
 .div_type-order input[type="submit"]{
+    width: 139px;
+    height: 40px;
+    cursor: pointer;
+    border-radius: 7px;
+    border: none;
+    outline: 1px solid var(--color-1);
+    background: transparent;
+    font-family: "Poppins-Regular";
+    font-size: 18px;
+    color: var(--color-1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .div_product-amount {
-    background: olive;
+    /* background: olive; */
+    width: 309px;
+    display: flex;
+    justify-content: space-between;
 }
+.div__product-amount label{
+    color: var(--color-1);
+    font-family: "Poppins-Regular";
+    font-size: 28px;}
 
 .div_product-amount input[type="number"]{
 
+}
+
+footer{
+    /* background: red; */
+    margin-top: 51px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+footer p{
+    color: var(--color-1);
+    font-family: "Poppins-Regular";
+    font-size: 18px;
+    padding-left: 75px;
+}
+.footer_social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 75px;
+    gap: 48px;
 }

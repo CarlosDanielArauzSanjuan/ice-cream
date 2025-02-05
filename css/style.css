@@ -308,3 +308,64 @@ main{
     outline: none;
     backdrop-filter: blur(3px);
 }
+
+.section_container-products {
+    background: red;
+    /* padding: 20px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.div_trendy {
+    background: violet;
+}
+
+.div_trendy h2{
+}
+
+.div_trendy img{
+}
+
+.article_products{
+    background: green;
+    /* padding: 20px; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    column-gap: 52px;
+    row-gap: 59px;
+}
+
+.form_container-product {
+    background: orange;
+    width: 690px;
+    height: 324px;
+}
+
+.form_container-product img{
+}
+
+.div_product {
+    background: turquoise;
+}
+
+.div_product h3{
+}
+
+.div_product label{
+}
+
+.div_type-order {
+    background: yellow;
+}
+
+.div_type-order input[type="submit"]{
+}
+
+.div_product-amount {
+    background: olive;
+}
+
+.div_product-amount input[type="number"]{
+
+}

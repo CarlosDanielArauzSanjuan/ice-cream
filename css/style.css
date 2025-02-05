@@ -10,7 +10,7 @@ body{
     background-image: url(../storage/img/background.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100vw; /* Ocupa todo el ancho de la pantalla */
+    width: 100%; /* Ocupa todo el ancho de la pantalla */
     overflow-x: hidden; /* Evita scroll horizontal si hay elementos desbordando */
     background-position: top center;
     background-color: var(--color-8);
@@ -31,7 +31,7 @@ width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 40px;
+    padding-left: 6.134vw;
 }  
 
 .header_logo img {
@@ -55,6 +55,7 @@ width: 100%;
         gap: 40px; /* Espaciado entre elementos */
         padding: 0; /* Evita espacios extra */
         margin: 0;
+        right: 30,439vw ;
 }
 
 .header_nav a {
@@ -71,7 +72,10 @@ width: 100%;
 
 .header_menu
 {
-    /*background: violet;*/
+    /*background: violet*/
+    position: relative;
+    right: 6.1921vw;
+    
 }
 
 main{
@@ -110,6 +114,9 @@ main{
     font-family: "Poppins-SemiBold";
     font-size: 120px;
     line-height: 91.4%;
+    position: relative;
+    left: 5.729vw;
+
             
 }
 
@@ -120,6 +127,9 @@ main{
         font-size: 26px;
         color: var(--color-6);
         line-height: 130%;
+        position: relative;
+        left: 6.1342vw;
+
 
 
 }
@@ -130,11 +140,13 @@ main{
     display: flex;
     margin-top: 26px;
     gap: 38px;
+    position: relative;
+    left: 6.1342vw;
 
 }
 
 .div_buttons a { 
-    width: 264px;
+    width: 300px;
     height: 86px;
     border-radius: 14px;
     outline: 1px solid var(--color-1);
@@ -233,7 +245,9 @@ main{
 .article_reviews {
     /* background: red; */
     overflow-y: auto;
-    
+    position: relative;
+    right: 8.217vw;
+    top: 16.377vw;    
 }
 
 .div_reviews-container {
@@ -249,6 +263,7 @@ main{
     top: 0px;
     padding-top: calc(var(--index) * var(--cardToppadding));
     z-index: var(--index);
+    
 }
 
 .div_reviews-cards::after {
@@ -322,6 +337,9 @@ main{
     color: var(--color-1);
     font-family: "Poppins-Medium";
     font-size: 20px;
+    position: relative;
+    right: 110px;
+
 }
 .div_choose-type-buttons {
     display: flex;
@@ -345,6 +363,9 @@ main{
     align-items: center;
     outline: none;
     backdrop-filter: blur(3px);
+    position: relative;
+    right: 5.3819vw;
+
 }
 
 .section_container-products {

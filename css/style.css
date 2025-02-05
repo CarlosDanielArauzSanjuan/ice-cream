@@ -149,12 +149,14 @@ main{
     width: 300px;
     height: 86px;
     border-radius: 14px;
-    outline: 1px solid var(--color-1);
+    outline: 0.5px solid var(--color-1);
     background: transparent; /* Color más vibrante */
     font-family: "Poppins-Thin";
     font-size: 36px;
     font-weight: bold;
-    color: white;
+    color: white; 
+    
+    
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -165,8 +167,7 @@ main{
 
 }
 .div_buttons:hover a:hover{
-    outline: none;
-    background: var(--color-1);
+    outline: 1px solid black;
     color: var(--color-2);
     backdrop-filter: blur(12px);
 }
@@ -362,7 +363,8 @@ main{
     justify-content: center;
     align-items: center;
     outline: none;
-    backdrop-filter: blur(3px);
+    
+    backdrop-filter: blur(3px);/*opacidad*/
     position: relative;
     right: 5.3819vw;
 
@@ -436,7 +438,30 @@ main{
  .form_container-product:hover{
      outline: none;
      cursor: pointer;
- }
+     background: var(--color-1); /*qqqqqqqq*/
+     transition: all 0.4s ease-in-out;
+     outline: 1px solid black;
+     
+     }
+
+.form_container-product label{
+        color: var(--color-1);
+
+    
+}
+
+.form_container-product:hover,
+.form_container-product:hover h3,
+.form_container-product:hover span,
+.form_container-product:hover input[type="submit"],
+.form_container-product:hover label {
+    color: var(--color-2);
+   
+}
+.form_container-product:hover input[type="submit"]{
+
+    outline: 0.5px solid black;
+}
  .form_container-product:active,
  .form_container-product:active h3,
  .form_container-product:active span,
